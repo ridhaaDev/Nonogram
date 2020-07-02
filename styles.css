@@ -1,0 +1,35 @@
+#nono_game {
+		width: 500px;
+		height: 500px;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-gap: 20px;
+}
+
+#nono_game div {
+	grid-gap: 20px;
+}
+
+#nono_game div div {
+	width: 100%;
+	height: 30px;
+	border: 1px solid black;
+
+}
+
+.black {
+	background-color: #ccc;
+}
+
+.red {
+	background-color: red;
+}
+
+.label {
+	background-color: blue;
+}
+
+.cell {
+	background-color: #ccc;
+}

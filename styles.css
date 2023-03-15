@@ -1,35 +1,50 @@
 #nono_game {
-		width: 500px;
-		height: 500px;
-
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-gap: 20px;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
 }
 
 #nono_game div {
-	grid-gap: 20px;
+  grid-gap: 20px;
 }
 
 #nono_game div div {
-	width: 100%;
-	height: 30px;
-	border: 1px solid black;
-
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid black;
 }
 
 .black {
-	background-color: #ccc;
+  background-color: #ccc;
 }
 
 .red {
-	background-color: red;
+  background-color: red;
 }
 
 .label {
-	background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 30px;
+  height: 30px;
 }
 
 .cell {
-	background-color: #ccc;
+  background-color: #ccc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.container > button {
+  width: 180px;
+  height: 60px;
+  font-size: 20px;
 }
